@@ -22,3 +22,7 @@ class HelloAnsibleView(View):
 class HelloSuperView(View):
     def get(self, request, *args, **kwargs):
         return HttpResponse("Hello SUPER")
+
+class AnsibleApiView(View):
+    def get(self, request, *args, **kwargs):
+        return HttpResponse("ANSIBLE ANSIBLE")
